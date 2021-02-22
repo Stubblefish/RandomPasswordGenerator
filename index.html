@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Password Generator!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+       
+</head>
+<body>
+    <div class='container'>
+        <h2>Password Generator</h2>
+        <!-- Result Container -->
+            <div class='result-container'>
+                <span id=result></span>
+            </div>
+            <main class='settings'>
+                <div class="setting">
+                    <label for="length">Password Length</label>
+                    <input type="number" id="length" min="8" max="128" value="8">
+                </div>
+                <div class="setting">
+                    <label for="lowercase">Allow Lowercase Letters?</label>
+                    <input type="checkbox" id="lowercase" checked>
+                    </div>
+                <div class="setting">
+                    <label for="uppercase">Allow Uppercase Letters?</label>
+                    <input type="checkbox" id="uppercase" checked>
+                </div>
+                <div class="setting">
+                    <label for="numbers">Allow Numbers?</label>
+                    <input type="checkbox" id="numbers" checked>
+                </div>
+                <div class="setting">
+                    <label for="symbols">Allow Symbols?</label>
+                    <input type="checkbox" id="symbols" checked>
+                </div>
+            </main>
+        
+        <button class="btn btn-large" id="generate">Generate Password</button>
+    </div>
+    <script src='./assets/js/main.js'></script>
+
+</body>
+</html>
